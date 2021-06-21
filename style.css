@@ -1,0 +1,90 @@
+/* CSS for calculator display */
+
+input#display-value-screen{
+    height: 90px;
+    width: 100%;
+    padding: 0 10px;
+    background: rgba(154, 185, 188, 0.8);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 90px;
+    color: white;
+    text-align: right;
+    overflow: auto;
+}
+
+/* for the whole calculator div */
+.calculator-wrapper{
+    width: 325px;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px 20px 9px;
+    background: linear-gradient(#85dd84, #9fcb96);
+    border-radius: 5px;
+}
+
+.keys-wrapper{
+    overflow: hidden;
+}
+
+/* for the calculator key or button */
+button {
+	float: left;
+	position: relative;
+	top: 0;
+	background: #523d98;
+	font-size:27px;
+	cursor: pointer;
+	width: 64.26px;
+	height: 46px;
+	border-radius: 5px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	margin: 0 7px 11px 0;
+	color: #f1c851;
+	line-height: 46px;
+	text-align: center;
+	user-select: none;
+    outline: 0 solid;
+	/* hover and active state transitions */
+	transition: all 0.2s ease;
+}
+
+/* style for operator key */
+.operator-key{
+    background-color: yellow;
+    color: blue;
+}
+
+/* style for equate key */
+.equate-key{
+    background-color: #fe886a;
+    color: black;
+    width: 206px;
+}
+
+/* css for message */
+.msg-wrapper {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+
+/* css for iphone 5/SE */
+@media only screen and (max-width: 560px) {
+    button {
+      width: 51.5px;
+    }
+  
+    .calculator-wrapper{
+      width: 275px;
+    }
+  
+    .equate-key{
+      width: 169px;
+    }
+}
+  
